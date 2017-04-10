@@ -17,30 +17,25 @@
 
 ----------
 
-A TreeView adaptation for UITableView that Apple missed is it's UIKit framework. And it is in pure Swift.
+An UITreeView implementation from UITableView that Apple missed in its UIKit framework. And it is in pure Swift.
 
 <p align="center" >★★ <b>Star our github repository to help us!</b> ★★</p>
 <p align="center" >Created by <a href="http://parthobiswas.com/">Partho Biswas</a> (<a href="http://www.twitter.com/ParthoBiswas007">@ParthoBiswas007</a>)</p>
 
 ## What's in it
 
- * A family tree API server implementation with implemented with [Perfect: Server-Side Swift](https://github.com/PerfectlySoft/Perfect).
- * An iOS mobile application that allows an user to create and view his family tree graph.
- * User can add his own family tree. The user starts with himself, specifies his data and specifies his relationship.
- * Each persons data contains his/her social security number, name, gender, date of birth. SSN is mandatory.
- * All data are synced into MySQL database.
+- [x] An UITreeView implementation from UITableView.
+- [x] An iOS application showing it's implementation and usage.
 
 ## Preview
 ![preview](/Preview.gif?raw=true)  
 
-## You May Also Like
-A native Android version of this iOS app is also available at this [repository](https://github.com/partho-maple/Perfect-Server-Side-Swift_android-App).
+## Requirements
 
-## Setup and configurations
-A detailed setup and configuration guide can be found [here](https://github.com/partho-maple/Perfect-Server-Side-Swift_iOS-App/blob/master/Setup.pdf). 
+iOS 8.0+ / Swift 3.0+
 
-## Architecture and design
-A detailed architectural design guide of the app can be found [here](https://github.com/partho-maple/Perfect-Server-Side-Swift_iOS-App/blob/master/Design%20Details.pdf). 
+## Setup and Usage
+Coming soon, very soon. Stay tuned.
 
 ## Contributing
 
