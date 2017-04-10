@@ -112,10 +112,10 @@
 		773CCD801E9BDA67004EFB2E /* TreeView */ = {
 			isa = PBXGroup;
 			children = (
-				773CCD811E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift */,
-				773CCD821E9BDA67004EFB2E /* TreeViewData.swift */,
 				773CCD831E9BDA67004EFB2E /* TreeViewNodeItem.swift */,
+				773CCD821E9BDA67004EFB2E /* TreeViewData.swift */,
 				773CCD921E9C027A004EFB2E /* TreeViewDataHandler.swift */,
+				773CCD811E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift */,
 			);
 			path = TreeView;
 			sourceTree = "<group>";
@@ -239,6 +239,7 @@
 				TargetAttributes = {
 					779CE6A61E9A881300AEB888 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CL96XN5QY7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -406,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -450,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -464,6 +465,7 @@
 			baseConfigurationReference = 5E77ED4DA6852612728E2383 /* Pods-PBTreeVIew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CL96XN5QY7;
 				INFOPLIST_FILE = PBTreeVIew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.parthobiswas.PBTreeVIew;
@@ -477,6 +479,7 @@
 			baseConfigurationReference = C3E6518F0F16B5FAC2D7E3A2 /* Pods-PBTreeVIew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CL96XN5QY7;
 				INFOPLIST_FILE = PBTreeVIew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.parthobiswas.PBTreeVIew;
