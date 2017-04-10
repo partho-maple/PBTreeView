@@ -1,0 +1,58 @@
+{
+  "relations" : [
+    {
+      "relation_type" : "It's Me",
+      "name" : "Partho Biswas",
+      "relatives" : [
+    {
+      "relation_type" : "Father",
+      "name" : "Binoy",
+      "relatives" : [
+        {
+          "relation_type" : "Wife",
+          "name" : "Shefali",
+          "relatives" : [
+            {
+              "relation_type" : "Son",
+              "social_security_number" : "Partho007",
+              "name" : "Partho",
+              "gender" : "Male",
+              "date_of_birth" : 9857290000,
+              "relation_id" : 1
+            }
+          ],
+          "relation_id" : 1,
+          "social_security_number" : "Shefali007",
+          "gender" : "Female",
+          "date_of_birth" : 0
+        }
+      ],
+      "relation_id" : 1,
+      "social_security_number" : "Binoy007",
+      "gender" : "Male",
+      "date_of_birth" : 0
+    },
+    {
+      "relation_type" : "Wife",
+      "social_security_number" : "Chaity007",
+      "name" : "Chaity",
+      "gender" : "Female",
+      "date_of_birth" : 0,
+      "relation_id" : 1
+    },
+    {
+      "relation_type" : "Me",
+      "social_security_number" : "Partho001",
+      "name" : "Partho",
+      "gender" : "Male",
+      "date_of_birth" : 1489420000,
+      "relation_id" : 1
+    }
+  ],
+      "relation_id" : 1,
+      "social_security_number" : "Partho007",
+      "gender" : "Male",
+      "date_of_birth" : 0
+    }
+  ]
+}

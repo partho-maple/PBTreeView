@@ -1,0 +1,6 @@
+framework module Pods_PBTreeVIew {
+  umbrella header "Pods-PBTreeVIew-umbrella.h"
+
+  export *
+  module * { export * }
+}
