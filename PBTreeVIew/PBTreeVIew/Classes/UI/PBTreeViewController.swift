@@ -183,13 +183,6 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
             self.addNodeToDataSourceWith(lavel: 0, relations: relation.relatives!, parentID: (relation.social_security_number)!, currentNodeList: &data)
         }
         
-//        let rootNode: RelationshipDetails? = RelationshipDetails()
-//        rootNode?.setRelationshipDetails(ssn: person.social_security_number!, name: person.name!, gender: person.gender!, date_of_birth: person.date_of_birth, date_of_death: person.date_of_death, relation: "It's Me", relation_id: 0, relatives: nil)
-//        
-//        data.append(TreeViewData(level: 0, details: rootNode!, id: (rootNode?.social_security_number)!, parentId: "-1")!)
-        
-//        return self.addNodeToDataSourceWith(lavel: 0, relations: relationDetails, parentID: (rootNode?.social_security_number)!, currentNodeList: &data)
-        
         return data
         
     }

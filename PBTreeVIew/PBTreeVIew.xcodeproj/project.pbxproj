@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		773CCD6D1E9BD8BB004EFB2E /* NodeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD691E9BD8BB004EFB2E /* NodeDetails.swift */; };
-		773CCD6E1E9BD8BB004EFB2E /* PersonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD6A1E9BD8BB004EFB2E /* PersonDetails.swift */; };
 		773CCD6F1E9BD8BB004EFB2E /* Relations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD6B1E9BD8BB004EFB2E /* Relations.swift */; };
 		773CCD701E9BD8BB004EFB2E /* RelationshipDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD6C1E9BD8BB004EFB2E /* RelationshipDetails.swift */; };
 		773CCD761E9BD8E1004EFB2E /* RABAppearanceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD721E9BD8E1004EFB2E /* RABAppearanceInfo.swift */; };
@@ -20,6 +18,7 @@
 		773CCD851E9BDA67004EFB2E /* TreeViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD821E9BDA67004EFB2E /* TreeViewData.swift */; };
 		773CCD861E9BDA67004EFB2E /* TreeViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD831E9BDA67004EFB2E /* TreeViewNode.swift */; };
 		773CCD911E9BDC58004EFB2E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD8C1E9BDC58004EFB2E /* Utils.swift */; };
+		773CCD931E9C027A004EFB2E /* TreeViewDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD921E9C027A004EFB2E /* TreeViewDataHandler.swift */; };
 		779CE6AB1E9A881300AEB888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779CE6AA1E9A881300AEB888 /* AppDelegate.swift */; };
 		779CE6B01E9A881300AEB888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779CE6AE1E9A881300AEB888 /* Main.storyboard */; };
 		779CE6B21E9A881300AEB888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779CE6B11E9A881300AEB888 /* Assets.xcassets */; };
@@ -30,8 +29,6 @@
 
 /* Begin PBXFileReference section */
 		5E77ED4DA6852612728E2383 /* Pods-PBTreeVIew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBTreeVIew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBTreeVIew/Pods-PBTreeVIew.debug.xcconfig"; sourceTree = "<group>"; };
-		773CCD691E9BD8BB004EFB2E /* NodeDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeDetails.swift; sourceTree = "<group>"; };
-		773CCD6A1E9BD8BB004EFB2E /* PersonDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetails.swift; sourceTree = "<group>"; };
 		773CCD6B1E9BD8BB004EFB2E /* Relations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relations.swift; sourceTree = "<group>"; };
 		773CCD6C1E9BD8BB004EFB2E /* RelationshipDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipDetails.swift; sourceTree = "<group>"; };
 		773CCD721E9BD8E1004EFB2E /* RABAppearanceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RABAppearanceInfo.swift; sourceTree = "<group>"; };
@@ -43,6 +40,7 @@
 		773CCD821E9BDA67004EFB2E /* TreeViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewData.swift; sourceTree = "<group>"; };
 		773CCD831E9BDA67004EFB2E /* TreeViewNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewNode.swift; sourceTree = "<group>"; };
 		773CCD8C1E9BDC58004EFB2E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		773CCD921E9C027A004EFB2E /* TreeViewDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewDataHandler.swift; sourceTree = "<group>"; };
 		779CE6A71E9A881300AEB888 /* PBTreeVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBTreeVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779CE6AA1E9A881300AEB888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779CE6AF1E9A881300AEB888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,8 +83,6 @@
 		773CCD681E9BD8BB004EFB2E /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				773CCD691E9BD8BB004EFB2E /* NodeDetails.swift */,
-				773CCD6A1E9BD8BB004EFB2E /* PersonDetails.swift */,
 				773CCD6B1E9BD8BB004EFB2E /* Relations.swift */,
 				773CCD6C1E9BD8BB004EFB2E /* RelationshipDetails.swift */,
 			);
@@ -119,6 +115,7 @@
 				773CCD811E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift */,
 				773CCD821E9BDA67004EFB2E /* TreeViewData.swift */,
 				773CCD831E9BDA67004EFB2E /* TreeViewNode.swift */,
+				773CCD921E9C027A004EFB2E /* TreeViewDataHandler.swift */,
 			);
 			path = TreeView;
 			sourceTree = "<group>";
@@ -164,10 +161,10 @@
 		779CE6BC1E9A89D100AEB888 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				779CE6BD1E9A89D100AEB888 /* UI */,
 				773CCD871E9BDC58004EFB2E /* Utils */,
 				773CCD711E9BD8E1004EFB2E /* AppearanceHelpers */,
 				773CCD671E9BD8BB004EFB2E /* Model */,
-				779CE6BD1E9A89D100AEB888 /* UI */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -331,10 +328,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773CCD6D1E9BD8BB004EFB2E /* NodeDetails.swift in Sources */,
 				773CCD761E9BD8E1004EFB2E /* RABAppearanceInfo.swift in Sources */,
 				773CCD861E9BDA67004EFB2E /* TreeViewNode.swift in Sources */,
 				779CE6C21E9A8A3100AEB888 /* PBTreeViewController.swift in Sources */,
+				773CCD931E9C027A004EFB2E /* TreeViewDataHandler.swift in Sources */,
 				773CCD771E9BD8E1004EFB2E /* UIColor+RABAppearance.swift in Sources */,
 				773CCD791E9BD8E1004EFB2E /* UIResponder+RABAppearance.swift in Sources */,
 				773CCD701E9BD8BB004EFB2E /* RelationshipDetails.swift in Sources */,
@@ -344,7 +341,6 @@
 				773CCD911E9BDC58004EFB2E /* Utils.swift in Sources */,
 				773CCD781E9BD8E1004EFB2E /* UIFont+RABAppearance.swift in Sources */,
 				773CCD841E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift in Sources */,
-				773CCD6E1E9BD8BB004EFB2E /* PersonDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
