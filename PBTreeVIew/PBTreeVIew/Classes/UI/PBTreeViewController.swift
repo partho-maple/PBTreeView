@@ -12,8 +12,8 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet weak var famityTreeTableView: UITableView!
     
-    var displayArray = [TreeViewNode]()
-    var nodes: [TreeViewNode] = []
+    var displayArray = [TreeViewNodeItem]()
+    var nodes: [TreeViewNodeItem] = []
     var data: [TreeViewData] = []
     
     override func viewDidLoad() {
@@ -58,7 +58,7 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let node: TreeViewNode = self.displayArray[indexPath.row]
+        let node: TreeViewNodeItem = self.displayArray[indexPath.row]
         let cell  = (self.famityTreeTableView.dequeueReusableCell(withIdentifier: "FamilyTreeTableViewCell") as! FamilyTreeTableViewCell)
         
         let relation = node.nodeObject as! RelationshipDetails?
@@ -129,21 +129,21 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func LoadDisplayArray() {
-        self.displayArray = [TreeViewNode]()
-        for node: TreeViewNode in nodes {
+        self.displayArray = [TreeViewNodeItem]()
+        for node: TreeViewNodeItem in nodes {
             self.displayArray.append(node)
             if (node.isExpanded == true) {
-                self.addChildrenArray(node.nodeChildren as! [TreeViewNode])
+                self.addChildrenArray(node.nodeChildren!)
             }
         }
     }
     
-    func addChildrenArray(_ childrenArray: [TreeViewNode]) {
-        for node: TreeViewNode in childrenArray {
+    func addChildrenArray(_ childrenArray: [TreeViewNodeItem]) {
+        for node: TreeViewNodeItem in childrenArray {
             self.displayArray.append(node)
             if (node.isExpanded == true ) {
                 if (node.nodeChildren != nil) {
-                    self.addChildrenArray(node.nodeChildren as! [TreeViewNode])
+                    self.addChildrenArray(node.nodeChildren!)
                 }
             }
         }
@@ -151,12 +151,12 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     //MARK:  Creating tree view data source here.
     
-    func loadInitialNodes(_ dataList: [TreeViewData]) -> [TreeViewNode] {
-        var nodes: [TreeViewNode] = []
+    func loadInitialNodes(_ dataList: [TreeViewData]) -> [TreeViewNodeItem] {
+        var nodes: [TreeViewNodeItem] = []
         
         for data in dataList where data.level == 0 {
             
-            let node: TreeViewNode = TreeViewNode()
+            let node: TreeViewNodeItem = TreeViewNodeItem()
             node.nodeLevel = data.level
             node.nodeObject = data.details as RelationshipDetails?
             node.isExpanded = true
@@ -204,12 +204,12 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     //MARK:  Recursive Method to Create the Children/Grandchildren....  node arrays
     
-    func loadChildrenNodes(_ dataList: [TreeViewData], level: Int, parentId: String) -> [TreeViewNode] {
-        var nodes: [TreeViewNode] = []
+    func loadChildrenNodes(_ dataList: [TreeViewData], level: Int, parentId: String) -> [TreeViewNodeItem] {
+        var nodes: [TreeViewNodeItem] = []
         
         for data in dataList where data.level == level && data.parentId == parentId {
             
-            let node: TreeViewNode = TreeViewNode()
+            let node: TreeViewNodeItem = TreeViewNodeItem()
             node.nodeLevel = data.level
             node.nodeObject = data.details as RelationshipDetails?
             

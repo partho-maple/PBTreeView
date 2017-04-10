@@ -16,7 +16,7 @@
 		773CCD7F1E9BD99D004EFB2E /* getRelation.json in Resources */ = {isa = PBXBuildFile; fileRef = 773CCD7E1E9BD99D004EFB2E /* getRelation.json */; };
 		773CCD841E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD811E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift */; };
 		773CCD851E9BDA67004EFB2E /* TreeViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD821E9BDA67004EFB2E /* TreeViewData.swift */; };
-		773CCD861E9BDA67004EFB2E /* TreeViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD831E9BDA67004EFB2E /* TreeViewNode.swift */; };
+		773CCD861E9BDA67004EFB2E /* TreeViewNodeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD831E9BDA67004EFB2E /* TreeViewNodeItem.swift */; };
 		773CCD911E9BDC58004EFB2E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD8C1E9BDC58004EFB2E /* Utils.swift */; };
 		773CCD931E9C027A004EFB2E /* TreeViewDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD921E9C027A004EFB2E /* TreeViewDataHandler.swift */; };
 		779CE6AB1E9A881300AEB888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779CE6AA1E9A881300AEB888 /* AppDelegate.swift */; };
@@ -38,7 +38,7 @@
 		773CCD7E1E9BD99D004EFB2E /* getRelation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getRelation.json; sourceTree = "<group>"; };
 		773CCD811E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyTreeTableViewCell.swift; sourceTree = "<group>"; };
 		773CCD821E9BDA67004EFB2E /* TreeViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewData.swift; sourceTree = "<group>"; };
-		773CCD831E9BDA67004EFB2E /* TreeViewNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewNode.swift; sourceTree = "<group>"; };
+		773CCD831E9BDA67004EFB2E /* TreeViewNodeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewNodeItem.swift; sourceTree = "<group>"; };
 		773CCD8C1E9BDC58004EFB2E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		773CCD921E9C027A004EFB2E /* TreeViewDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewDataHandler.swift; sourceTree = "<group>"; };
 		779CE6A71E9A881300AEB888 /* PBTreeVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBTreeVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +114,7 @@
 			children = (
 				773CCD811E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift */,
 				773CCD821E9BDA67004EFB2E /* TreeViewData.swift */,
-				773CCD831E9BDA67004EFB2E /* TreeViewNode.swift */,
+				773CCD831E9BDA67004EFB2E /* TreeViewNodeItem.swift */,
 				773CCD921E9C027A004EFB2E /* TreeViewDataHandler.swift */,
 			);
 			path = TreeView;
@@ -329,7 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				773CCD761E9BD8E1004EFB2E /* RABAppearanceInfo.swift in Sources */,
-				773CCD861E9BDA67004EFB2E /* TreeViewNode.swift in Sources */,
+				773CCD861E9BDA67004EFB2E /* TreeViewNodeItem.swift in Sources */,
 				779CE6C21E9A8A3100AEB888 /* PBTreeViewController.swift in Sources */,
 				773CCD931E9C027A004EFB2E /* TreeViewDataHandler.swift in Sources */,
 				773CCD771E9BD8E1004EFB2E /* UIColor+RABAppearance.swift in Sources */,

@@ -14,7 +14,7 @@ class FamilyTreeTableViewCell: UITableViewCell {
     @IBOutlet weak var treeButton: UIButton!
     @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var subTitleLable: UILabel!
-    var treeNode: TreeViewNode!
+    var treeNode: TreeViewNodeItem!
     
     
     //MARK:  Draw Rectangle for Image
