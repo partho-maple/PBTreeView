@@ -2,7 +2,7 @@
   "relations" : [
     {
       "relation_type" : "It's Me",
-      "name" : "Partho Biswas",
+      "name" : "Partho Biswas's Family Tree",
       "relatives" : [
     {
       "relation_type" : "Father",
@@ -51,6 +51,60 @@
   ],
       "relation_id" : 1,
       "social_security_number" : "Partho007",
+      "gender" : "Male",
+      "date_of_birth" : 0
+    },
+    {
+      "relation_type" : "It's Me",
+      "name" : "John Doe's Family Tree",
+      "relatives" : [
+    {
+      "relation_type" : "Father",
+      "name" : "Hunnibal Lecter",
+      "relatives" : [
+        {
+          "relation_type" : "Wife",
+          "name" : "Meryl Streep",
+          "relatives" : [
+            {
+              "relation_type" : "Son",
+              "social_security_number" : "John007",
+              "name" : "John Doe",
+              "gender" : "Male",
+              "date_of_birth" : 9857290000,
+              "relation_id" : 1
+            }
+          ],
+          "relation_id" : 1,
+          "social_security_number" : "Meryl007",
+          "gender" : "Female",
+          "date_of_birth" : 0
+        }
+      ],
+      "relation_id" : 1,
+      "social_security_number" : "Hunnibal007",
+      "gender" : "Male",
+      "date_of_birth" : 0
+    },
+    {
+      "relation_type" : "Wife",
+      "social_security_number" : "Kayle007",
+      "name" : "Kayle Doe",
+      "gender" : "Female",
+      "date_of_birth" : 0,
+      "relation_id" : 1
+    },
+    {
+      "relation_type" : "Brother",
+      "social_security_number" : "Adam007",
+      "name" : "Adam Doe",
+      "gender" : "Male",
+      "date_of_birth" : 1489420000,
+      "relation_id" : 1
+    }
+  ],
+      "relation_id" : 1,
+      "social_security_number" : "John007",
       "gender" : "Male",
       "date_of_birth" : 0
     }
