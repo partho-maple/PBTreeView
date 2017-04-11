@@ -22,17 +22,17 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Setting up delegates and observer. This step is necessary
         self.famityTreeTableView.delegate = self
         self.famityTreeTableView.dataSource = self
-        
         NotificationCenter.default.addObserver(self, selector: #selector(PBTreeViewController.relodeTreeView(_:)), name: NSNotification.Name(rawValue: "RelodeTreeView"), object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Loading and converting JSON data
         let relations: [RelationshipDetails]? = readJson(JSON_File_Name)
         
         if (relations != nil) {
-            //MARK:  Creating tree datasource here.
+            //  Creating tree datasource here.
             self.treeViewDataSource = (dataHandler?.configureTreeViewDatasource(relations!))!
         }
     }
