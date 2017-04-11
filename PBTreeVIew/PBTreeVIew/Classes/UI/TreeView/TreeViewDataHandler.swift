@@ -11,8 +11,55 @@ import UIKit
 class TreeViewDataHandler {
 
     //MARK:  Creating tree view data source here.
+    var nodes: [TreeViewNodeItem] = []
     
-    func loadInitialNodes(_ dataList: [TreeViewData]) -> [TreeViewNodeItem] {
+    init() {
+        NotificationCenter.default.addObserver(self, selector: #selector(expandCollapseNode(_:)), name: NSNotification.Name(rawValue: "TreeNodeButtonClicked"), object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver("TreeNodeButtonClicked")
+    }
+    
+    @objc func expandCollapseNode(_ notification: Notification) {
+        //        self.LoadDisplayArray()
+        
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "RelodeTreeView"), object: self)
+        
+    }
+    
+    public func configureTreeViewDatasource(_ relationDetails: [RelationshipDetails]) -> [TreeViewNodeItem]? {
+        
+        nodes = self.loadInitialNodes((self.createDataSourceWith(relationDetails)))
+        
+        
+        
+        return refreshNodes()
+    }
+    
+    func refreshNodes() -> [TreeViewNodeItem]? {
+        var nodeDataSource = [TreeViewNodeItem]()
+        for node: TreeViewNodeItem in nodes {
+            nodeDataSource.append(node)
+            if (node.isExpanded == true) {
+                self.addChildrenNode(node.nodeChildren!, parentNodeDataSource: &nodeDataSource)
+            }
+        }
+        return nodeDataSource
+    }
+    
+    private func addChildrenNode(_ childrenNodeDataSource: [TreeViewNodeItem], parentNodeDataSource:  inout [TreeViewNodeItem]) {
+        for node: TreeViewNodeItem in childrenNodeDataSource {
+            parentNodeDataSource.append(node)
+            if (node.isExpanded == true ) {
+                if (node.nodeChildren != nil) {
+                    self.addChildrenNode(node.nodeChildren!, parentNodeDataSource: &parentNodeDataSource)
+                }
+            }
+        }
+    }
+    
+    private func loadInitialNodes(_ dataList: [TreeViewData]) -> [TreeViewNodeItem] {
         var nodes: [TreeViewNodeItem] = []
         
         for data in dataList where data.level == 0 {
@@ -34,7 +81,7 @@ class TreeViewDataHandler {
         return nodes
     }
     
-    func createDataSourceWith(_ relationDetails: [RelationshipDetails]) -> [TreeViewData]
+    private func createDataSourceWith(_ relationDetails: [RelationshipDetails]) -> [TreeViewData]
     {
         var data: [TreeViewData] = []
         
@@ -49,7 +96,7 @@ class TreeViewDataHandler {
     }
     
     
-    func addNodeToDataSourceWith(lavel: Int, relations: [RelationshipDetails], parentID: String, currentNodeList: inout [TreeViewData]) -> [TreeViewData] {
+    private func addNodeToDataSourceWith(lavel: Int, relations: [RelationshipDetails], parentID: String, currentNodeList: inout [TreeViewData]) -> [TreeViewData] {
         
         for relation in relations {
             
@@ -65,7 +112,7 @@ class TreeViewDataHandler {
     
     //MARK:  Recursive Method to Create the Children/Grandchildren....  node arrays
     
-    func loadChildrenNodes(_ dataList: [TreeViewData], level: Int, parentId: String) -> [TreeViewNodeItem] {
+    private func loadChildrenNodes(_ dataList: [TreeViewData], level: Int, parentId: String) -> [TreeViewNodeItem] {
         var nodes: [TreeViewNodeItem] = []
         
         for data in dataList where data.level == level && data.parentId == parentId {

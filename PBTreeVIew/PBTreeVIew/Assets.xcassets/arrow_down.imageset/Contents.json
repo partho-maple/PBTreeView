@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "1245687669879828181Soeb_Plain_Arrow_5.svg.med.png",
+      "filename" : "arrow_down.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "arrow_down@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "arrow_down@3x.png",
       "scale" : "3x"
     }
   ],

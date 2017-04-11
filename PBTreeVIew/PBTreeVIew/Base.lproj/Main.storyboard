@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4PZ-Ly-kQZ" id="fb0-jG-vYl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbM-Pk-jSv">
@@ -56,7 +56,7 @@
                                                         <constraint firstAttribute="width" constant="30" id="3sH-lR-mgv"/>
                                                         <constraint firstAttribute="height" constant="30" id="NZz-1V-YjP"/>
                                                     </constraints>
-                                                    <state key="normal" backgroundImage="whiteClose"/>
+                                                    <state key="normal" backgroundImage="arrow_right"/>
                                                     <connections>
                                                         <action selector="treeButtonCLicked:" destination="4PZ-Ly-kQZ" eventType="touchUpInside" id="RbE-AD-jJ5"/>
                                                     </connections>
@@ -132,7 +132,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow_right" width="20" height="20"/>
         <image name="info_icon" width="30" height="30"/>
-        <image name="whiteClose" width="640" height="640"/>
     </resources>
 </document>

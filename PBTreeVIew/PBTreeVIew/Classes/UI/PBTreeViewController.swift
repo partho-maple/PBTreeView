@@ -12,18 +12,18 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet weak var famityTreeTableView: UITableView!
     
-    var displayArray = [TreeViewNodeItem]()
-    var nodes: [TreeViewNodeItem] = []
-    var data: [TreeViewData] = []
+    var treeViewDataSource = [TreeViewNodeItem]()
     var dataHandler: TreeViewDataHandler? = TreeViewDataHandler()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Setting up delegates and observer. This step is necessary
         self.famityTreeTableView.delegate = self
         self.famityTreeTableView.dataSource = self
-        NotificationCenter.default.addObserver(self, selector: #selector(PBTreeViewController.expandCollapseNode(_:)), name: NSNotification.Name(rawValue: "TreeNodeButtonClicked"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(PBTreeViewController.relodeTreeView(_:)), name: NSNotification.Name(rawValue: "RelodeTreeView"), object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -33,8 +33,7 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         if (relations != nil) {
             //MARK:  Creating tree datasource here.
-            self.nodes = dataHandler!.loadInitialNodes((dataHandler?.createDataSourceWith(relations!))!)
-            self.LoadDisplayArray()
+            self.treeViewDataSource = (dataHandler?.configureTreeViewDatasource(relations!))!
         }
     }
     
@@ -53,12 +52,12 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: - Tableview methodes
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return displayArray.count;
+        return treeViewDataSource.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let node: TreeViewNodeItem = self.displayArray[indexPath.row]
+        let node: TreeViewNodeItem = self.treeViewDataSource[indexPath.row]
         let cell  = (self.famityTreeTableView.dequeueReusableCell(withIdentifier: "FamilyTreeTableViewCell") as! FamilyTreeTableViewCell)
         
         let relation = node.nodeObject 
@@ -68,9 +67,9 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.subTitleLable.text = relation?.relation
         
         if (node.isExpanded == true) {
-            cell.setTheButtonBackgroundImage(UIImage(named: "whiteOpen")!)
+            cell.setTheButtonBackgroundImage(UIImage(named: "arrow_down")!)
         } else {
-            cell.setTheButtonBackgroundImage(UIImage(named: "whiteClose")!)
+            cell.setTheButtonBackgroundImage(UIImage(named: "arrow_right")!)
         }
         
         cell.setNeedsDisplay()
@@ -111,34 +110,11 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 
     
-    //MARK:  Node/Data Functions
     
-    func expandCollapseNode(_ notification: Notification) {
-        self.LoadDisplayArray()
-        
+    func relodeTreeView(_ notification: Notification) {
+        self.treeViewDataSource = (dataHandler?.refreshNodes())!
         DispatchQueue.main.async {
             self.famityTreeTableView.reloadData()
-        }
-    }
-    
-    func LoadDisplayArray() {
-        self.displayArray = [TreeViewNodeItem]()
-        for node: TreeViewNodeItem in nodes {
-            self.displayArray.append(node)
-            if (node.isExpanded == true) {
-                self.addChildrenArray(node.nodeChildren!)
-            }
-        }
-    }
-    
-    func addChildrenArray(_ childrenArray: [TreeViewNodeItem]) {
-        for node: TreeViewNodeItem in childrenArray {
-            self.displayArray.append(node)
-            if (node.isExpanded == true ) {
-                if (node.nodeChildren != nil) {
-                    self.addChildrenArray(node.nodeChildren!)
-                }
-            }
         }
     }
 
