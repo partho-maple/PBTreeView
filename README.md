@@ -35,7 +35,11 @@ An UITreeView implementation from UITableView that Apple missed in its UIKit fra
 iOS 8.0+ / Swift 3.0+
 
 ## Setup and Usage
-Coming soon, very soon. Stay tuned.
+This `PBTreeView` has been drawn over `UITableView`. Every row/node of the TreeView represents a `UITableViewCell` with a custom object.
+
+
+
+
 
 ## Contributing
 
