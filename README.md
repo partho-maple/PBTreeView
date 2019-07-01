@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="https://developer.apple.com/swift/" target="_blank">
-<img src="https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat" alt="Swift 3.0">
+<img src="https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat" alt="Swift 5.0">
 </a>
 <a href="https://developer.apple.com/swift/" target="_blank">
 <img src="https://img.shields.io/badge/Platforms-OS%20X%20%7C%20Linux%20-lightgray.svg?style=flat" alt="iOS">
@@ -32,7 +32,7 @@ An UITreeView implementation from UITableView that Apple missed in its UIKit fra
 
 ## Requirements
 
-iOS 8.0+ / Swift 3.0+
+iOS 8.0+ / Swift 5.0+
 
 ## Setup and Usage
 This `PBTreeView` has been drawn over `UITableView`. Every row/node of the TreeView represents a `UITableViewCell` with a custom object.
