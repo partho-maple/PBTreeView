@@ -6,6 +6,6 @@ target 'PBTreeVIew' do
   use_frameworks!
 
   # Pods for PBTreeVIew
-  pod 'ObjectMapper', '~> 2.2'
+  pod 'ObjectMapper', '~> 3.4'
 
 end

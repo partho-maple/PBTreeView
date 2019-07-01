@@ -111,7 +111,7 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     
     
-    func relodeTreeView(_ notification: Notification) {
+    @objc func relodeTreeView(_ notification: Notification) {
         self.treeViewDataSource = (dataHandler?.refreshNodes())!
         DispatchQueue.main.async {
             self.famityTreeTableView.reloadData()

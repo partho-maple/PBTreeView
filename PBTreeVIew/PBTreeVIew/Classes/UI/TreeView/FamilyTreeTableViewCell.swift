@@ -35,7 +35,7 @@ class FamilyTreeTableViewCell: UITableViewCell {
     //MARK:  Set Background image
     
     func setTheButtonBackgroundImage(_ backgroundImage: UIImage) {
-        self.treeButton.setBackgroundImage(backgroundImage, for: UIControlState())
+        self.treeButton.setBackgroundImage(backgroundImage, for: UIControl.State())
     }
     
     
