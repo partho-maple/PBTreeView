@@ -6,7 +6,7 @@
 //  Copyright © 2017 Partho Biswas. All rights reserved.
 //
 
-class TreeViewData {
+class PBTreeViewData {
     var level: Int
     var details: RelationshipDetails?
     

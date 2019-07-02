@@ -6,9 +6,9 @@
 //  Copyright © 2017 Partho Biswas. All rights reserved.
 //
 
-class TreeViewNodeItem {
+class PBTreeViewNodeItem {
     var nodeLevel: Int?
     var isExpanded: Bool?
     var nodeObject: RelationshipDetails?
-    var nodeChildren: [TreeViewNodeItem]?
+    var nodeChildren: [PBTreeViewNodeItem]?
 }

@@ -12,8 +12,8 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet weak var famityTreeTableView: UITableView!
     
-    var treeViewDataSource = [TreeViewNodeItem]()
-    var dataHandler: TreeViewDataHandler? = TreeViewDataHandler()
+    var treeViewDataSource = [PBTreeViewNodeItem]()
+    var dataHandler: PBTreeViewDataHandler? = PBTreeViewDataHandler()
     
     
     override func viewDidLoad() {
@@ -57,8 +57,8 @@ class PBTreeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let node: TreeViewNodeItem = self.treeViewDataSource[indexPath.row]
-        let cell  = (self.famityTreeTableView.dequeueReusableCell(withIdentifier: "FamilyTreeTableViewCell") as! FamilyTreeTableViewCell)
+        let node: PBTreeViewNodeItem = self.treeViewDataSource[indexPath.row]
+        let cell  = (self.famityTreeTableView.dequeueReusableCell(withIdentifier: "FamilyTreeTableViewCell") as! PBTreeViewTableCell)
         
         let relation = node.nodeObject 
         

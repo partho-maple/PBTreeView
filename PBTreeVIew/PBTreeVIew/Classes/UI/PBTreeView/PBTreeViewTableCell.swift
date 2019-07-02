@@ -8,13 +8,13 @@
 
 import UIKit
 
-class FamilyTreeTableViewCell: UITableViewCell {
+class PBTreeViewTableCell: UITableViewCell {
 
     
     @IBOutlet weak var treeButton: UIButton!
     @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var subTitleLable: UILabel!
-    var treeNode: TreeViewNodeItem!
+    var treeNode: PBTreeViewNodeItem!
     
     
     //MARK:  Draw Rectangle for Image

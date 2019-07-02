@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		773293EE22CA7D9D0047EAA3 /* PBTreeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773293ED22CA7D9D0047EAA3 /* PBTreeViewDataSource.swift */; };
+		773293F022CA7E250047EAA3 /* PBTreeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773293EF22CA7E250047EAA3 /* PBTreeViewDelegate.swift */; };
 		773CCD6F1E9BD8BB004EFB2E /* Relations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD6B1E9BD8BB004EFB2E /* Relations.swift */; };
 		773CCD701E9BD8BB004EFB2E /* RelationshipDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD6C1E9BD8BB004EFB2E /* RelationshipDetails.swift */; };
 		773CCD761E9BD8E1004EFB2E /* RABAppearanceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD721E9BD8E1004EFB2E /* RABAppearanceInfo.swift */; };
@@ -14,11 +16,11 @@
 		773CCD781E9BD8E1004EFB2E /* UIFont+RABAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD741E9BD8E1004EFB2E /* UIFont+RABAppearance.swift */; };
 		773CCD791E9BD8E1004EFB2E /* UIResponder+RABAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD751E9BD8E1004EFB2E /* UIResponder+RABAppearance.swift */; };
 		773CCD7F1E9BD99D004EFB2E /* getRelation.json in Resources */ = {isa = PBXBuildFile; fileRef = 773CCD7E1E9BD99D004EFB2E /* getRelation.json */; };
-		773CCD841E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD811E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift */; };
-		773CCD851E9BDA67004EFB2E /* TreeViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD821E9BDA67004EFB2E /* TreeViewData.swift */; };
-		773CCD861E9BDA67004EFB2E /* TreeViewNodeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD831E9BDA67004EFB2E /* TreeViewNodeItem.swift */; };
+		773CCD841E9BDA67004EFB2E /* PBTreeViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD811E9BDA67004EFB2E /* PBTreeViewTableCell.swift */; };
+		773CCD851E9BDA67004EFB2E /* PBTreeViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD821E9BDA67004EFB2E /* PBTreeViewData.swift */; };
+		773CCD861E9BDA67004EFB2E /* PBTreeViewNodeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD831E9BDA67004EFB2E /* PBTreeViewNodeItem.swift */; };
 		773CCD911E9BDC58004EFB2E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD8C1E9BDC58004EFB2E /* Utils.swift */; };
-		773CCD931E9C027A004EFB2E /* TreeViewDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD921E9C027A004EFB2E /* TreeViewDataHandler.swift */; };
+		773CCD931E9C027A004EFB2E /* PBTreeViewDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCD921E9C027A004EFB2E /* PBTreeViewDataHandler.swift */; };
 		779CE6AB1E9A881300AEB888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779CE6AA1E9A881300AEB888 /* AppDelegate.swift */; };
 		779CE6B01E9A881300AEB888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779CE6AE1E9A881300AEB888 /* Main.storyboard */; };
 		779CE6B21E9A881300AEB888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779CE6B11E9A881300AEB888 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		5E77ED4DA6852612728E2383 /* Pods-PBTreeVIew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBTreeVIew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBTreeVIew/Pods-PBTreeVIew.debug.xcconfig"; sourceTree = "<group>"; };
+		773293ED22CA7D9D0047EAA3 /* PBTreeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBTreeViewDataSource.swift; sourceTree = "<group>"; };
+		773293EF22CA7E250047EAA3 /* PBTreeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBTreeViewDelegate.swift; sourceTree = "<group>"; };
 		773CCD6B1E9BD8BB004EFB2E /* Relations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relations.swift; sourceTree = "<group>"; };
 		773CCD6C1E9BD8BB004EFB2E /* RelationshipDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipDetails.swift; sourceTree = "<group>"; };
 		773CCD721E9BD8E1004EFB2E /* RABAppearanceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RABAppearanceInfo.swift; sourceTree = "<group>"; };
@@ -36,11 +40,11 @@
 		773CCD741E9BD8E1004EFB2E /* UIFont+RABAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+RABAppearance.swift"; sourceTree = "<group>"; };
 		773CCD751E9BD8E1004EFB2E /* UIResponder+RABAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+RABAppearance.swift"; sourceTree = "<group>"; };
 		773CCD7E1E9BD99D004EFB2E /* getRelation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getRelation.json; sourceTree = "<group>"; };
-		773CCD811E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyTreeTableViewCell.swift; sourceTree = "<group>"; };
-		773CCD821E9BDA67004EFB2E /* TreeViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewData.swift; sourceTree = "<group>"; };
-		773CCD831E9BDA67004EFB2E /* TreeViewNodeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewNodeItem.swift; sourceTree = "<group>"; };
+		773CCD811E9BDA67004EFB2E /* PBTreeViewTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBTreeViewTableCell.swift; sourceTree = "<group>"; };
+		773CCD821E9BDA67004EFB2E /* PBTreeViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBTreeViewData.swift; sourceTree = "<group>"; };
+		773CCD831E9BDA67004EFB2E /* PBTreeViewNodeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBTreeViewNodeItem.swift; sourceTree = "<group>"; };
 		773CCD8C1E9BDC58004EFB2E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		773CCD921E9C027A004EFB2E /* TreeViewDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewDataHandler.swift; sourceTree = "<group>"; };
+		773CCD921E9C027A004EFB2E /* PBTreeViewDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBTreeViewDataHandler.swift; sourceTree = "<group>"; };
 		779CE6A71E9A881300AEB888 /* PBTreeVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBTreeVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779CE6AA1E9A881300AEB888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779CE6AF1E9A881300AEB888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,15 +113,17 @@
 			path = "Supporting FIles";
 			sourceTree = "<group>";
 		};
-		773CCD801E9BDA67004EFB2E /* TreeView */ = {
+		773CCD801E9BDA67004EFB2E /* PBTreeView */ = {
 			isa = PBXGroup;
 			children = (
-				773CCD831E9BDA67004EFB2E /* TreeViewNodeItem.swift */,
-				773CCD821E9BDA67004EFB2E /* TreeViewData.swift */,
-				773CCD921E9C027A004EFB2E /* TreeViewDataHandler.swift */,
-				773CCD811E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift */,
+				773CCD831E9BDA67004EFB2E /* PBTreeViewNodeItem.swift */,
+				773CCD821E9BDA67004EFB2E /* PBTreeViewData.swift */,
+				773CCD921E9C027A004EFB2E /* PBTreeViewDataHandler.swift */,
+				773CCD811E9BDA67004EFB2E /* PBTreeViewTableCell.swift */,
+				773293ED22CA7D9D0047EAA3 /* PBTreeViewDataSource.swift */,
+				773293EF22CA7E250047EAA3 /* PBTreeViewDelegate.swift */,
 			);
-			path = TreeView;
+			path = PBTreeView;
 			sourceTree = "<group>";
 		};
 		773CCD871E9BDC58004EFB2E /* Utils */ = {
@@ -173,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				779CE6C11E9A8A3100AEB888 /* PBTreeViewController.swift */,
-				773CCD801E9BDA67004EFB2E /* TreeView */,
+				773CCD801E9BDA67004EFB2E /* PBTreeView */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -321,18 +327,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				773CCD761E9BD8E1004EFB2E /* RABAppearanceInfo.swift in Sources */,
-				773CCD861E9BDA67004EFB2E /* TreeViewNodeItem.swift in Sources */,
+				773CCD861E9BDA67004EFB2E /* PBTreeViewNodeItem.swift in Sources */,
 				779CE6C21E9A8A3100AEB888 /* PBTreeViewController.swift in Sources */,
-				773CCD931E9C027A004EFB2E /* TreeViewDataHandler.swift in Sources */,
+				773293EE22CA7D9D0047EAA3 /* PBTreeViewDataSource.swift in Sources */,
+				773CCD931E9C027A004EFB2E /* PBTreeViewDataHandler.swift in Sources */,
 				773CCD771E9BD8E1004EFB2E /* UIColor+RABAppearance.swift in Sources */,
+				773293F022CA7E250047EAA3 /* PBTreeViewDelegate.swift in Sources */,
 				773CCD791E9BD8E1004EFB2E /* UIResponder+RABAppearance.swift in Sources */,
 				773CCD701E9BD8BB004EFB2E /* RelationshipDetails.swift in Sources */,
-				773CCD851E9BDA67004EFB2E /* TreeViewData.swift in Sources */,
+				773CCD851E9BDA67004EFB2E /* PBTreeViewData.swift in Sources */,
 				773CCD6F1E9BD8BB004EFB2E /* Relations.swift in Sources */,
 				779CE6AB1E9A881300AEB888 /* AppDelegate.swift in Sources */,
 				773CCD911E9BDC58004EFB2E /* Utils.swift in Sources */,
 				773CCD781E9BD8E1004EFB2E /* UIFont+RABAppearance.swift in Sources */,
-				773CCD841E9BDA67004EFB2E /* FamilyTreeTableViewCell.swift in Sources */,
+				773CCD841E9BDA67004EFB2E /* PBTreeViewTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
